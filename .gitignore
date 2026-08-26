@@ -1,0 +1,10 @@
+*.dll
+*.meta
+*.asset
+
+*.json
+*.unity
+*.mat
+*.renderTexture
+*ss
+*xml
