@@ -12,5 +12,5 @@
 *xml
 
 
-bin/
-obj/
+Managed/bin/
+Managed/obj/

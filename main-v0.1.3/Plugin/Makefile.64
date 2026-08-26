@@ -6,14 +6,22 @@ TARGET = KlakSpout.dll
 
 DEST = bin/x86_64/
 
-SRCS = KlakSpout/KlakSpout.cpp \
+SRCS = KlakSpout.cpp \
+       Spout/SpoutCopy.cpp \
+       Spout/SpoutDirectX.cpp \
+       Spout/SpoutGLDXinterop.cpp \
+       Spout/SpoutGLextensions.cpp \
+       Spout/SpoutMemoryShare.cpp \
+       Spout/SpoutReceiver.cpp \
+       Spout/SpoutSDK.cpp \
+       Spout/SpoutSender.cpp \
+       Spout/SpoutSenderMemory.cpp \
        Spout/SpoutSenderNames.cpp \
-       Spout/SpoutSharedMemory.cpp \
-       Spout/SpoutUtils.cpp
+       Spout/SpoutSharedMemory.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-LIBS = -Wl,--subsystem,windows -static -ldxgi -ld3d11
+LIBS = -Wl,--subsystem,windows -static -ldxgi -ld3d11 -lopengl32 -ld3d9 -lshlwapi -lversion -lgdi32
 
 #
 # Compiler/linker options
@@ -27,6 +35,7 @@ CC_FLAGS = -O2
 CC_FLAGS += -IKlakSpout -I. -std=c++14 -DMINI_SPOUTUTILS
 CC_FLAGS += -Wall -Wno-unknown-pragmas -Wno-conversion-null
 CC_FLAGS += -Wno-format -Wno-unused-function
+CC_FLAGS += -march=native
 
 # For debugging
 # CC_FLAGS = -O0 -D_DEBUG

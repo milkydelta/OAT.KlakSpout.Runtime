@@ -4,7 +4,7 @@
 
 TARGET = KlakSpout.dll
 
-DEST = bin/
+DEST = bin/x86/
 
 SRCS = KlakSpout.cpp \
        Spout/SpoutCopy.cpp \
@@ -27,7 +27,7 @@ LIBS = -Wl,--subsystem,windows -static -ldxgi -ld3d11 -lopengl32 -ld3d9 -lshlwap
 # Compiler/linker options
 #
 
-TOOLCHAIN = x86_64-w64-mingw32
+TOOLCHAIN = i686-w64-mingw32
 CC = $(TOOLCHAIN)-g++
 STRIP = $(TOOLCHAIN)-strip
 

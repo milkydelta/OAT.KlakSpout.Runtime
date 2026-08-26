@@ -4,7 +4,7 @@
 
 TARGET = KlakSpout.dll
 
-DEST = ../Packages/jp.keijiro.klak.spout/Plugin/
+DEST = bin/x86_64/
 
 SRCS = Plugin.cpp \
        Spout/SpoutSenderNames.cpp \
@@ -20,7 +20,7 @@ LIBS = -Wl,--subsystem,windows -static -ldxgi -ld3d12 -ld3d11 -lole32
 #
 
 TOOLCHAIN = x86_64-w64-mingw32
-CC = $(TOOLCHAIN)-g++-posix
+CC = $(TOOLCHAIN)-g++
 STRIP = $(TOOLCHAIN)-strip
 
 CC_FLAGS = -O2
