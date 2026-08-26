@@ -1,4 +1,6 @@
 *.dll
+*.o
+
 *.meta
 *.asset
 
@@ -8,3 +10,7 @@
 *.renderTexture
 *ss
 *xml
+
+
+bin/
+obj/

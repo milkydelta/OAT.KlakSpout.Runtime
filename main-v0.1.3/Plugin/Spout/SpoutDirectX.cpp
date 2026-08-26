@@ -62,7 +62,7 @@
 
 */
 
-#include "spoutDirectX.h"
+#include "SpoutDirectX.h"
 
 spoutDirectX::spoutDirectX() {
 

@@ -36,7 +36,7 @@
 #include "SpoutCommon.h"
 #include <windows.h>
 #include <stdio.h> // for debug printf
-#include <gl/gl.h> // For OpenGL definitions
+#include <GL/gl.h> // For OpenGL definitions
 #include <intrin.h> // for cpuid to test for SSE2
 #include <emmintrin.h> // for SSE2
 #include <tmmintrin.h> // for SSSE3

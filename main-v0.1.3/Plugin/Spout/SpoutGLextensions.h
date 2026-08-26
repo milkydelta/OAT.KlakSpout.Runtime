@@ -74,7 +74,7 @@
 	#include <GL\glew.h>
 	#include <GL\wglew.h> // wglew.h and glxew.h, which define the available WGL and GLX extensions
 #else
-	#include <GL\GL.h>
+	#include <GL/gl.h>
 	#ifndef USE_FBO_EXTENSIONS
 		// For Max/Msp Jitter
 		#include "jit.gl.h"

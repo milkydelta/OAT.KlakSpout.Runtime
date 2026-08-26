@@ -31,7 +31,8 @@ namespace klakspout
             : type_(type), width_(width), height_(height), format_(DXGI_FORMAT_UNKNOWN),
             d3d11_resource_(nullptr), d3d11_resource_view_(nullptr)
         {
-            auto len = name._Copy_s(name_, SpoutMaxSenderNameLen - 1, name.length());
+            auto len = name.copy(name_,SpoutMaxSenderNameLen - 1);
+            //auto len = name._Copy_s(name_, SpoutMaxSenderNameLen - 1, name.length());
             name_[len] = 0;
         }
 

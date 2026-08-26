@@ -35,19 +35,19 @@
 #define __spoutGLDXinterop__
 
 #include "SpoutCommon.h"
-#include "spoutDirectX.h"
-#include "spoutSenderNames.h"
+#include "SpoutDirectX.h"
+#include "SpoutSenderNames.h"
 #include "SpoutMemoryShare.h"
-#include "spoutCopy.h"
+#include "SpoutCopy.h"
 
 #include <windowsx.h>
 #include <d3d9.h>	// DX9
 #include <d3d11.h>	// DX11
-#include <gl/gl.h>
-#include <gl/glu.h> // For glerror
+#include <GL/gl.h>
+#include <GL/glu.h> // For glerror
 #include <shlwapi.h> // for path functions
 
-#include "spoutGLextensions.h" // include last due to redefinition problems with OpenCL
+#include "SpoutGLextensions.h" // include last due to redefinition problems with OpenCL
 
 
 class SPOUT_DLLEXP spoutGLDXinterop {

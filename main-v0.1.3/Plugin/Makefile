@@ -1,0 +1,62 @@
+#
+# File listings
+#
+
+TARGET = KlakSpout.dll
+
+DEST = bin/
+
+SRCS = KlakSpout.cpp \
+       Spout/SpoutCopy.cpp \
+       Spout/SpoutDirectX.cpp \
+       Spout/SpoutGLDXinterop.cpp \
+       Spout/SpoutGLextensions.cpp \
+       Spout/SpoutMemoryShare.cpp \
+       Spout/SpoutReceiver.cpp \
+       Spout/SpoutSDK.cpp \
+       Spout/SpoutSender.cpp \
+       Spout/SpoutSenderMemory.cpp \
+       Spout/SpoutSenderNames.cpp \
+       Spout/SpoutSharedMemory.cpp
+
+OBJS = $(SRCS:.cpp=.o)
+
+LIBS = -Wl,--subsystem,windows -static -ldxgi -ld3d11 -lopengl32 -ld3d9 -lshlwapi -lversion -lgdi32
+
+#
+# Compiler/linker options
+#
+
+TOOLCHAIN = x86_64-w64-mingw32
+CC = $(TOOLCHAIN)-g++
+STRIP = $(TOOLCHAIN)-strip
+
+CC_FLAGS = -O2
+CC_FLAGS += -IKlakSpout -I. -std=c++14 -DMINI_SPOUTUTILS
+CC_FLAGS += -Wall -Wno-unknown-pragmas -Wno-conversion-null
+CC_FLAGS += -Wno-format -Wno-unused-function
+CC_FLAGS += -march=native
+
+# For debugging
+# CC_FLAGS = -O0 -D_DEBUG
+
+LD_FLAGS = -shared
+
+#
+# Building rules
+#
+
+all: $(TARGET)
+
+clean:
+	rm -f $(TARGET) $(OBJS)
+
+copy: all
+	cp $(TARGET) $(DEST)
+
+$(TARGET): $(OBJS)
+	$(CC) $(LD_FLAGS) -o $@ $^ $(LIBS)
+	$(STRIP) $@
+
+%.o: %.cpp
+	$(CC) $(CC_FLAGS) -c -o $@ $<

@@ -37,10 +37,10 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <Mmsystem.h> // for timegettime
+#include <mmsystem.h> // for timegettime
 #include <direct.h>   // for _getcwd
 #include <shlwapi.h>  // for path functions
-#include "Shellapi.h" // for shellexecute
+#include "shellapi.h" // for shellexecute
 
 #pragma comment(lib, "shlwapi.lib")  // for path functions
 #pragma comment(lib, "Shell32.lib")  // for shellexecute
@@ -49,7 +49,7 @@
 
 
 #include "SpoutCommon.h"
-#include "spoutMemoryShare.h"
+#include "SpoutMemoryShare.h"
 #include "SpoutSenderNames.h"
 #include "SpoutGLDXinterop.h"
 
