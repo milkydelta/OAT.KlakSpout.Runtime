@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net35</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Version>1.0.1.1</Version>
+    <DefineConstants>UNITY_STANDALONE_WIN</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityManagedDir)UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(UnityManagedDir)UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
