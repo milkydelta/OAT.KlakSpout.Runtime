@@ -8,7 +8,7 @@ Desktop.ini
 # Code Editors
 .idea
 .vscode
-*.csproj
+*.csproj.user
 *.sln
 *.swp
 *.vcxproj.user
