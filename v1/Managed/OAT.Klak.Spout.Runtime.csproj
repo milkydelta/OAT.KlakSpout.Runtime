@@ -5,6 +5,7 @@
     <LangVersion>10</LangVersion>
     <Version>1.0.1.1</Version>
     <DefineConstants>UNITY_STANDALONE_WIN</DefineConstants>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net35</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <LangVersion>10</LangVersion>
     <Version>2.0.6.0</Version>
     <DefineConstants>UNITY_STANDALONE_WIN</DefineConstants>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,10 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(UnityManagedDir)UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>$(UnityManagedDir)UnityEngine.ScreenCaptureModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="netstandard">
