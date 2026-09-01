@@ -3,7 +3,7 @@ using UnityEngine.Rendering;
 using System.Runtime.InteropServices;
 using System;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 // Render event IDs
 // Should match with KlakSpout::EventID (Event.h)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 //
 // "Memory pool" class without actual memory pool functionality

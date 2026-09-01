@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using RTID = UnityEngine.Rendering.RenderTargetIdentifier;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 static class RendererOverride
 {

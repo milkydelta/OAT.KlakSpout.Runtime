@@ -1,7 +1,7 @@
 using System.Runtime.InteropServices;
 using IntPtr = System.IntPtr;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 static class Plugin
 {

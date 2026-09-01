@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 // Texture format enumeration
 // Should match with KlakSpout::Format (Receiver.h)

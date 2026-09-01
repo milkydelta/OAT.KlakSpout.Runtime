@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 //
 // Spout sender class (main implementation)

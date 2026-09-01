@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 //
 // Spout receiver class (properties)

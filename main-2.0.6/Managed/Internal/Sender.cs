@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Runtime.InteropServices;
 using IntPtr = System.IntPtr;
 
-namespace Klak.Spout {
+namespace OnAirTap.Klak.Spout {
 
 //
 // Wrapper class for sender instances on the native plugin side
