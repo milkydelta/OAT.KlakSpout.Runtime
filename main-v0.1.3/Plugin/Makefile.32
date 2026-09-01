@@ -2,7 +2,7 @@
 # File listings
 #
 
-TARGET = KlakSpout.dll
+TARGET = OAT_KlakSpout_0.dll
 
 DEST = bin/x86/
 

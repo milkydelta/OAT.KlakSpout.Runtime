@@ -19,31 +19,31 @@ namespace OnAirTap.Klak.Spout
             }
         }
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern System.IntPtr GetRenderEventFunc();
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern System.IntPtr CreateSender(string name, int width, int height);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern System.IntPtr CreateReceiver(string name);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern System.IntPtr GetTexturePointer(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern int GetTextureWidth(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern int GetTextureHeight(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")] [return: MarshalAs(UnmanagedType.Bool)]
+        [DllImport("OAT_KlakSpout_1")] [return: MarshalAs(UnmanagedType.Bool)]
         internal static extern bool CheckValid(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern int ScanSharedObjects();
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_1")]
         internal static extern System.IntPtr GetSharedObjectName(int index);
 
         internal static string GetSharedObjectNameString(int index)

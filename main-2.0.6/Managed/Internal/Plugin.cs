@@ -17,19 +17,19 @@ static class Plugin
 
 #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
 
-    [DllImport("KlakSpout")]
+    [DllImport("OAT_KlakSpout_2")]
     public static extern IntPtr GetRenderEventCallback();
 
-    [DllImport("KlakSpout")]
+    [DllImport("OAT_KlakSpout_2")]
     public static extern IntPtr CreateSender(string name, int width, int height);
 
-    [DllImport("KlakSpout")]
+    [DllImport("OAT_KlakSpout_2")]
     public static extern IntPtr CreateReceiver(string name);
 
-    [DllImport("KlakSpout")]
+    [DllImport("OAT_KlakSpout_2")]
     public static extern ReceiverData GetReceiverData(IntPtr receiver);
 
-    [DllImport("KlakSpout")]
+    [DllImport("OAT_KlakSpout_2")]
     public static extern void GetSenderNames
       ([Out, MarshalAs(UnmanagedType.LPArray, SizeParamIndex = 1)]
        out IntPtr[] names, out int count);

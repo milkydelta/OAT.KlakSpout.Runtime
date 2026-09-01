@@ -24,34 +24,34 @@ namespace OnAirTap.Klak.Spout
 
         #region Native plugin interface
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr GetRenderEventFunc();
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr CreateSender(string name, int width, int height);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr CreateReceiver(string name);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern void DestroySharedObject(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern bool DetectDisconnection(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr GetTexturePointer(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern int GetTextureWidth(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern int GetTextureHeight(System.IntPtr ptr);
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern int CountSharedObjects();
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr GetSharedObjectName(int index);
 
         public static string GetSharedObjectNameString(int index)
@@ -60,7 +60,7 @@ namespace OnAirTap.Klak.Spout
             return ptr != System.IntPtr.Zero ? Marshal.PtrToStringAnsi(ptr) : null;
         }
 
-        [DllImport("KlakSpout")]
+        [DllImport("OAT_KlakSpout_0")]
         public static extern System.IntPtr SearchSharedObjectName(string keyword);
 
         public static string SearchSharedObjectNameString(string keyword)
