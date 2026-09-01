@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     static class PluginEntry
     {

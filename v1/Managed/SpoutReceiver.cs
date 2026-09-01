@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     [ExecuteInEditMode]
     [AddComponentMenu("Klak/Spout/Spout Receiver")]

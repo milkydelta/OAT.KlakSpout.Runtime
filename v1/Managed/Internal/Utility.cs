@@ -4,7 +4,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     // Internal utilities
     static class Util

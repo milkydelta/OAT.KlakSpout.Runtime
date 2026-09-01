@@ -2,7 +2,7 @@
 // https://github.com/keijiro/KlakSpout
 
 using UnityEngine;
-using Klak.Spout;
+using OnAirTap.Klak.Spout;
 
 namespace OnAirTap.Spout
 {

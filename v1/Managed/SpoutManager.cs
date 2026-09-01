@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     public static class SpoutManager
     {
