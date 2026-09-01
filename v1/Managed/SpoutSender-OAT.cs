@@ -61,6 +61,7 @@ namespace OnAirTap.Spout
 
         public void CaptureFrame()
         {
+            if (!enabled){return;}
             if (_sourceTexture == null){return;}
 
             // Plugin lazy initialization

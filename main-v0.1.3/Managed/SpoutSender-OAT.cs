@@ -112,6 +112,7 @@ namespace OnAirTap.Spout
 
         public void CaptureFrame()
         {
+            if (!enabled){return;}
             if (_sourceTex != null)
             {
 
