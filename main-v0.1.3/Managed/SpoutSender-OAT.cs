@@ -1,7 +1,7 @@
 ﻿// KlakSpout - Spout realtime video sharing plugin for Unity
 // https://github.com/keijiro/KlakSpout
 using UnityEngine;
-using Klak.Spout;
+using OnAirTap.Klak.Spout;
 using System;
 
 namespace OnAirTap.Spout

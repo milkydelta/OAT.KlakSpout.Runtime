@@ -3,7 +3,7 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     public static class PluginEntry
     {

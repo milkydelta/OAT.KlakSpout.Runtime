@@ -2,7 +2,7 @@
 // https://github.com/keijiro/KlakSpout
 using UnityEngine;
 
-namespace Klak.Spout
+namespace OnAirTap.Klak.Spout
 {
     /// Spout sender class
     [AddComponentMenu("Klak/Spout/Spout Sender")]
