@@ -22,31 +22,24 @@ static class Blitter
 {
     public static void Blit
       (SpoutResources resrc, Texture src, RenderTexture dst, bool alpha)
-      => Graphics.Blit(src, dst, GetMaterial(resrc), alpha ? 0 : 1);
+      => Graphics.Blit(src, dst, new Vector2(1.0f, -1.0f), new Vector2(0.0f, 1.0f));
 
     public static void BlitVFlip
       (SpoutResources resrc, Texture src, RenderTexture dst, bool alpha)
-      => Graphics.Blit(src, dst, GetMaterial(resrc), alpha ? 2 : 3);
+      => Graphics.Blit(src, dst);
 
     public static void Blit
       (SpoutResources resrc, CommandBuffer cb, RTID src, RTID dst, bool alpha)
-      => cb.Blit(src, dst, GetMaterial(resrc), alpha ? 0 : 1);
+      => cb.Blit(src, dst, new Vector2(1.0f, -1.0f), new Vector2(0.0f, 1.0f));
 
     public static void BlitFromSrgb
       (SpoutResources resrc, Texture src, RenderTexture dst)
-      => Graphics.Blit(src, dst, GetMaterial(resrc), 4);
+      => Graphics.Blit(src, dst, new Vector2(1.0f, -1.0f), new Vector2(0.0f, 1.0f));
+    //Shader isn't available, so I can't actually implement this.
 
-    static Material _material;
-
-    static Material GetMaterial(SpoutResources resrc)
-    {
-        if (_material == null)
-        {
-            _material = new Material(resrc.blitShader);
-            _material.hideFlags = HideFlags.DontSave;
-        }
-        return _material;
-    }
+    public static void BlitVFlipWithMaterial
+      (SpoutResources resrc, Texture src, RenderTexture dst, bool alpha, Material mat)
+      => Graphics.Blit(src, dst, mat);
 }
 
 static class Utility

@@ -9,6 +9,7 @@
 #include "Unity/IUnityGraphics.h"
 #include "Unity/IUnityGraphicsD3D11.h"
 #include "Unity/IUnityGraphicsD3D12.h"
+#include <cstdint>
 
 namespace KlakSpout {
 
