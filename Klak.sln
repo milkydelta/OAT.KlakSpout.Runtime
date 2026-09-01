@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v1", "v1", "{59868D21-84E9-47FC-B8FF-BFBC0816EDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAT.Klak.Spout.Runtime", "v1\Managed\OAT.Klak.Spout.Runtime.csproj", "{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main-v0.1.3", "main-v0.1.3", "{9FE0B347-42F6-4B80-98A2-623749BC27E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAT.Klak.Spout.Runtime", "main-v0.1.3\Managed\OAT.Klak.Spout.Runtime.csproj", "{E39A20F1-2CF9-4BCF-9941-6945F66A3F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main-2.0.6", "main-2.0.6", "{D274F109-EF92-456E-95B5-CB0DC2A50C4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAT.Klak.Spout.Runtime", "main-2.0.6\Managed\OAT.Klak.Spout.Runtime.csproj", "{EEA22365-9945-4ACE-BB9D-AE94FBB2175F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39A20F1-2CF9-4BCF-9941-6945F66A3F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39A20F1-2CF9-4BCF-9941-6945F66A3F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39A20F1-2CF9-4BCF-9941-6945F66A3F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39A20F1-2CF9-4BCF-9941-6945F66A3F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEA22365-9945-4ACE-BB9D-AE94FBB2175F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA22365-9945-4ACE-BB9D-AE94FBB2175F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA22365-9945-4ACE-BB9D-AE94FBB2175F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA22365-9945-4ACE-BB9D-AE94FBB2175F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61FB7CC5-F80B-4CDA-B1DB-FA6399E53ED4} = {59868D21-84E9-47FC-B8FF-BFBC0816EDAD}
+		{E39A20F1-2CF9-4BCF-9941-6945F66A3F69} = {9FE0B347-42F6-4B80-98A2-623749BC27E8}
+		{EEA22365-9945-4ACE-BB9D-AE94FBB2175F} = {D274F109-EF92-456E-95B5-CB0DC2A50C4F}
+	EndGlobalSection
+EndGlobal
