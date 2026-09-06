@@ -11,9 +11,9 @@ namespace OnAirTap.Spout
     public sealed class SpoutSender : MonoBehaviour
     {
 
-        [SerializeField] RenderTexture _sourceTexture;
+        [SerializeField] Texture _sourceTexture;
 
-        public RenderTexture sourceTexture {
+        public Texture sourceTexture {
             get { return _sourceTexture; }
             set { _sourceTexture = value; }
         }
@@ -67,7 +67,7 @@ namespace OnAirTap.Spout
             // Plugin lazy initialization
             if (_plugin == System.IntPtr.Zero)
             {
-                _plugin = PluginEntry.CreateSender(name, _sourceTexture.width, _sourceTexture.height);
+                _plugin = PluginEntry.CreateSender(_spoutName, _sourceTexture.width, _sourceTexture.height);
                 if (_plugin == System.IntPtr.Zero) return; // Spout may not be ready.
             }
 
