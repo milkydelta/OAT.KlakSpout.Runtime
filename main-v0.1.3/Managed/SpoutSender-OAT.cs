@@ -9,7 +9,7 @@ namespace OnAirTap.Spout
     /// Spout sender class
     [AddComponentMenu("Klak/Spout/Spout Sender")]
     [ExecuteInEditMode]
-    public class SpoutSender : MonoBehaviour
+    public class SpoutSender
     {
         #region Editable properties
 
@@ -58,6 +58,14 @@ namespace OnAirTap.Spout
 
         #region MonoBehaviour functions
 
+        bool _enabled = true;
+
+        public bool enabled
+        {
+            get { return _enabled; }
+            set { _enabled = value; }
+        }
+
         void Update()
         {
             PluginEntry.Poll();
@@ -76,9 +84,9 @@ namespace OnAirTap.Spout
             if (_sharedTexture != null)
             {
                 if (Application.isPlaying)
-                    Destroy(_sharedTexture);
+                    UnityEngine.Object.Destroy(_sharedTexture);
                 else
-                    DestroyImmediate(_sharedTexture);
+                    UnityEngine.Object.DestroyImmediate(_sharedTexture);
                 _sharedTexture = null;
             }
         }
@@ -112,6 +120,7 @@ namespace OnAirTap.Spout
 
         public void CaptureFrame()
         {
+            Update();
             if (!enabled){return;}
             if (_sourceTex != null)
             {

@@ -11,7 +11,7 @@ namespace OnAirTap.Spout
     //
     [ExecuteInEditMode]
     [AddComponentMenu("Klak/Spout/Spout Sender")]
-    public sealed class SpoutSender : MonoBehaviour
+    public sealed class SpoutSender
     {
         #region Spout source
 
@@ -106,7 +106,7 @@ namespace OnAirTap.Spout
 
         #region Capture coroutine
 
-        void CaptureFrame()
+        public void CaptureFrame()
         {
             if (!enabled) { return; }
 
@@ -147,7 +147,15 @@ namespace OnAirTap.Spout
 
         #region MonoBehaviour implementation
 
-        void OnDisable()
+        bool _enabled = true;
+
+        public bool enabled
+        {
+            get { return _enabled; }
+            set { _enabled = value; }
+        }
+
+        public void OnDisable()
         {
             ReleaseSender();
             PrepareBuffer(0, 0);

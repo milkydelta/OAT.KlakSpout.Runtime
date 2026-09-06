@@ -8,7 +8,7 @@ namespace OnAirTap.Spout
 {
     [ExecuteInEditMode]
     [AddComponentMenu("Klak/Spout/Spout Sender")]
-    public sealed class SpoutSender : MonoBehaviour
+    public sealed class SpoutSender
     {
 
         [SerializeField] Texture _sourceTexture;
@@ -61,6 +61,7 @@ namespace OnAirTap.Spout
 
         public void CaptureFrame()
         {
+            Update();
             if (!enabled){return;}
             if (_sourceTexture == null){return;}
 
@@ -123,6 +124,14 @@ namespace OnAirTap.Spout
         }
 
         #region MonoBehaviour implementation
+
+        bool _enabled = true;
+
+        public bool enabled
+        {
+            get { return _enabled; }
+            set { _enabled = value; }
+        }
 
         void Update()
         {
