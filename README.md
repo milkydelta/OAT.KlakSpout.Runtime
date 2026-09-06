@@ -13,6 +13,6 @@ v1 is from the "v1" branch of the KlakSpout repo. I've not actually tested it, a
 
 Download the version that you need.
 
-Place the managed DLL in `BepInEx/plugins` or `UserLibs`, depending on your mod loader.
+Place the managed (`OAT.Klak.Spout.Runtime`) DLL in `BepInEx/plugins` or `UserLibs`, depending on your mod loader.
 
-Place the unmanaged DLL in `<game name>_Data/Plugins`.
+Place the unmanaged (`OAT_KlakSpout`) DLL in `<game name>_Data/Plugins`.
