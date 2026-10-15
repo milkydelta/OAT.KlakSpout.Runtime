@@ -27,4 +27,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <Content Include="../Plugin/bin/x86_64/OAT_KlakSpout_2.dll" Link="x86_64/%(Filename)%(Extension)">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
