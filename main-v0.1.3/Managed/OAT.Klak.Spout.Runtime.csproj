@@ -7,6 +7,10 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>$(UnityManagedDir)UnityEngine.dll</HintPath>
