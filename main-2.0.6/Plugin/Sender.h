@@ -26,6 +26,7 @@ public:
     {
         // Lazy initialization
         if (!_texture) initialize();
+        if (_system == nullptr){return;}
 
         WRL::ComPtr<IUnknown> unknown(source);
 
@@ -63,6 +64,11 @@ private:
         desc.SampleDesc.Count = 1;
         desc.BindFlags = D3D11_BIND_RENDER_TARGET | D3D11_BIND_SHADER_RESOURCE;
         desc.MiscFlags = D3D11_RESOURCE_MISC_SHARED;
+
+        if (_system == nullptr){
+            LogError("_system == nullptr", _name, -42);
+            return;
+        }
 
         // Create a shared texture.
         auto hres = _system->getD3D11Device()
