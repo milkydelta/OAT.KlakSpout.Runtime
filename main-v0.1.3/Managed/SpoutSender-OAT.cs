@@ -168,10 +168,12 @@ namespace OnAirTap.Spout
                             GL.LoadOrtho();
                             GL.Clear(true,true,new Color(0,0,0,0));
                             GL.Begin(GL.QUADS);
-                            GL.Vertex3(0, 0, 0);
-                            GL.Vertex3(1, 0, 0);
-                            GL.Vertex3(0, 1, 0);
-                            GL.Vertex3(1, 1, 0);
+
+                            GL.TexCoord2(0, 0); GL.Vertex3(0, 0, 0);
+                            GL.TexCoord2(1, 0); GL.Vertex3(1, 0, 0);
+                            GL.TexCoord2(1, 1); GL.Vertex3(1, 1, 0);
+                            GL.TexCoord2(0, 1); GL.Vertex3(0, 1, 0);
+
                             GL.End();
                         }
                         GL.PopMatrix();
