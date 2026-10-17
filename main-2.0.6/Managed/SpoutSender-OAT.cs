@@ -99,6 +99,7 @@ namespace OnAirTap.Spout
                 _buffer.hideFlags = HideFlags.DontSave;
                 _buffer.Create();
             }
+            Debug.Log("[OAT-KlakSpout-206]: Prepared Buffer");
         }
 
         #endregion

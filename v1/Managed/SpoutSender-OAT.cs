@@ -85,6 +85,7 @@ namespace OnAirTap.Spout
                     );
                     _sharedTexture.hideFlags = HideFlags.DontSave;
                 }
+                Debug.Log("[OAT-KlakSpout-101]: Made Shared Texture!");
             }
 
             // Shared texture update

@@ -114,7 +114,6 @@ namespace OnAirTap.Spout
                 }
             }
             Debug.Log("[OAT-KlakSpout-013]: Made Shared Texture!");
-            System.Console.WriteLine("[OAT-KlakSpout-013]: Made Shared Texture!");
         }
 
 
