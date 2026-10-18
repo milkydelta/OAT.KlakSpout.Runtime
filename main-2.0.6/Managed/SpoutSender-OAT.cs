@@ -98,8 +98,8 @@ namespace OnAirTap.Spout
                 _buffer = new RenderTexture(width, height, 0);
                 _buffer.hideFlags = HideFlags.DontSave;
                 _buffer.Create();
+                Debug.Log("[OAT-KlakSpout-206]: Prepared Buffer");
             }
-            Debug.Log("[OAT-KlakSpout-206]: Prepared Buffer");
         }
 
         #endregion
