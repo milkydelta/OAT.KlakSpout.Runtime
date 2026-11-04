@@ -27,6 +27,9 @@
     <Content Include="../Plugin/bin/x86_64/OAT_KlakSpout_1.dll" Link="x86_64/%(Filename)%(Extension)">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="../../KLAKSPOUT-DLL-LICENSE.txt" Link="%(Filename)%(Extension)">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

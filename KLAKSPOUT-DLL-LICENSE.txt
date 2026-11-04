@@ -1,6 +1,6 @@
 KlakSpout Plugin Copyright Notice
 
-The file "KlakSpout.dll" contains portions of code from the Spout2 SDK.
+The file "OAT_KlakSpout.dll" contains portions of code from the Spout2 SDK.
 That code is distributed to you and me under the terms of the Two-Clause
 BSD License, which is copied below.
 
@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ---------------------------------END BSD---------------------------------
 
-KlakSpout.dll also includes some Unity Native Plugin Interface header files.
+OAT_KlakSpout.dll also includes some Unity Native Plugin Interface header files.
 Each of those contains the following copyright notice.
 
 -------------------------------BEGIN UNITY-------------------------------
