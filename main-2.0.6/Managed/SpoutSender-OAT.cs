@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 using OnAirTap.Klak.Spout;
+using System;
 
 namespace OnAirTap.Spout
 {
@@ -11,7 +12,7 @@ namespace OnAirTap.Spout
     //
     [ExecuteInEditMode]
     [AddComponentMenu("Klak/Spout/Spout Sender")]
-    public sealed class SpoutSender
+    public sealed class SpoutSender : IDisposable
     {
         #region Spout source
 
@@ -163,6 +164,11 @@ namespace OnAirTap.Spout
         }
 
         #endregion
+
+        public void Dispose()
+        {
+            OnDisable();
+        }
     }
 
 } // namespace Klak.Spout

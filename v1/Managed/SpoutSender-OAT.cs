@@ -3,12 +3,13 @@
 
 using UnityEngine;
 using OnAirTap.Klak.Spout;
+using System;
 
 namespace OnAirTap.Spout
 {
     [ExecuteInEditMode]
     [AddComponentMenu("Klak/Spout/Spout Sender")]
-    public sealed class SpoutSender
+    public sealed class SpoutSender : IDisposable
     {
 
         [SerializeField] Texture _sourceTexture;
@@ -142,5 +143,10 @@ namespace OnAirTap.Spout
         }
 
         #endregion
+
+        public void Dispose()
+        {
+            DestroyTextureAndSender();
+        }
     }
 }

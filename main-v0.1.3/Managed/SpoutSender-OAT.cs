@@ -9,7 +9,7 @@ namespace OnAirTap.Spout
     /// Spout sender class
     [AddComponentMenu("Klak/Spout/Spout Sender")]
     [ExecuteInEditMode]
-    public class SpoutSender
+    public class SpoutSender : IDisposable
     {
         #region Editable properties
 
@@ -188,5 +188,11 @@ namespace OnAirTap.Spout
                 }
             }
         }
+
+        public void Dispose()
+        {
+            DestroyTextureAndSender();
+        }
+
     }
 }
