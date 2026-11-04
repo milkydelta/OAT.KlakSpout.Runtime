@@ -113,7 +113,7 @@ namespace OnAirTap.Spout
                     );
                 }
             }
-            Debug.Log("[OAT-KlakSpout-013]: Made Shared Texture!");
+            Misc.Log("Made Shared Texture!");
         }
 
 

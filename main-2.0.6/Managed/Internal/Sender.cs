@@ -30,7 +30,7 @@ sealed class Sender : System.IDisposable
 
         // Initial update event
         _event.IssuePluginEvent(EventID.UpdateSender);
-        Debug.Log("[OAT-KlakSpout-206]: Made Sender");
+        OnAirTap.Spout.Misc.Log("Made Sender");
     }
 
     public void Dispose()
