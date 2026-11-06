@@ -29,7 +29,7 @@ static class FormatUtil
                 return TextureFormat.RGBAFloat;
 
             default:
-                Debug.LogError("Unknown texture format");
+                System.Console.WriteLine("ERROR: Unknown texture format");
                 return TextureFormat.RGBA32;
         }
     }
